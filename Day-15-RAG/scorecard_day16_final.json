@@ -1,0 +1,18 @@
+{
+  "project": "Day 16 - Diagnosing RAG Failure Modes",
+  "total_tests": 15,
+  "successful_retrieval_behavior": "14/15",
+  "retrieval_success_rate": 0.93,
+  "average_retrieval_coverage": 0.82,
+  "average_retrieval_quality": 4.13,
+  "average_answer_quality": null,
+  "answer_evaluation_status": "Pending — OpenAI generation unavailable because API credits are exhausted.",
+  "embedding_model": "all-MiniLM-L6-v2",
+  "embedding_dimension": 384,
+  "retrieval_method": "FAISS IndexFlatL2",
+  "baseline_top_k": 3,
+  "subquery_top_k": 2,
+  "distance_threshold": 0.8,
+  "fix_1": "Similarity/distance threshold filtering",
+  "fix_2": "Query decomposition for broad multi-topic queries"
+}
