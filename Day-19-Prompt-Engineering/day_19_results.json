@@ -1,0 +1,94 @@
+{
+  "day": 19,
+  "title": "Prompt Engineering for Reliable LLM Outputs",
+  "task": "Company Policy Question Answering",
+  "total_test_questions": 10,
+  "prompt_versions": [
+    "baseline",
+    "role_assignment",
+    "output_format",
+    "reasoning_instruction",
+    "few_shot",
+    "negative_constraints"
+  ],
+  "api_experiment_executed": false,
+  "api_available": false,
+  "comparison": [
+    {
+      "Technique": "Baseline",
+      "Accuracy": null,
+      "Format Consistency": null,
+      "Average Score": null,
+      "Improvement vs Baseline": null
+    },
+    {
+      "Technique": "Role Assignment",
+      "Accuracy": null,
+      "Format Consistency": null,
+      "Average Score": null,
+      "Improvement vs Baseline": null
+    },
+    {
+      "Technique": "Output Format",
+      "Accuracy": null,
+      "Format Consistency": null,
+      "Average Score": null,
+      "Improvement vs Baseline": null
+    },
+    {
+      "Technique": "Reasoning Instruction",
+      "Accuracy": null,
+      "Format Consistency": null,
+      "Average Score": null,
+      "Improvement vs Baseline": null
+    },
+    {
+      "Technique": "Few-Shot Examples",
+      "Accuracy": null,
+      "Format Consistency": null,
+      "Average Score": null,
+      "Improvement vs Baseline": null
+    },
+    {
+      "Technique": "Negative Constraints",
+      "Accuracy": null,
+      "Format Consistency": null,
+      "Average Score": null,
+      "Improvement vs Baseline": null
+    }
+  ],
+  "grounding_questions": [
+    "Who is the CEO of NovaTech?",
+    "What is NovaTech's annual revenue?",
+    "When was NovaTech founded?",
+    "What programming language does NovaTech use internally?",
+    "How many offices does NovaTech have worldwide?"
+  ],
+  "grounding_results": [
+    {
+      "question": "Who is the CEO of NovaTech?",
+      "answer": "API credits required for actual test",
+      "refused_correctly": null
+    },
+    {
+      "question": "What is NovaTech's annual revenue?",
+      "answer": "API credits required for actual test",
+      "refused_correctly": null
+    },
+    {
+      "question": "When was NovaTech founded?",
+      "answer": "API credits required for actual test",
+      "refused_correctly": null
+    },
+    {
+      "question": "What programming language does NovaTech use internally?",
+      "answer": "API credits required for actual test",
+      "refused_correctly": null
+    },
+    {
+      "question": "How many offices does NovaTech have worldwide?",
+      "answer": "API credits required for actual test",
+      "refused_correctly": null
+    }
+  ]
+}
