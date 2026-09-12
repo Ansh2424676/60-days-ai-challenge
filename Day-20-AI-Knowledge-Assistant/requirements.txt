@@ -1,0 +1,10 @@
+fastapi
+uvicorn[standard]
+openai
+python-dotenv
+sentence-transformers
+faiss-cpu
+langchain-core
+langchain-text-splitters
+pydantic
+numpy

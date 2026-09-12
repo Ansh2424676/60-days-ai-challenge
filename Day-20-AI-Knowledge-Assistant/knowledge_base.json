@@ -1,0 +1,102 @@
+[
+  {
+    "id": "doc-001",
+    "title": "Company Overview",
+    "text": "NovaTech Solutions is a fictional software company founded in 2023. Its headquarters is in Noida, India.",
+    "metadata": {
+      "category": "company",
+      "department": "general",
+      "source": "company_overview"
+    }
+  },
+  {
+    "id": "doc-002",
+    "title": "Company Departments",
+    "text": "NovaTech Solutions has three departments: Artificial Intelligence, Data Engineering, and Cloud Infrastructure.",
+    "metadata": {
+      "category": "organization",
+      "department": "general",
+      "source": "company_structure"
+    }
+  },
+  {
+    "id": "doc-003",
+    "title": "NovaMind Launch",
+    "text": "NovaTech Solutions launched its internal AI assistant called NovaMind in February 2026.",
+    "metadata": {
+      "category": "product",
+      "department": "Artificial Intelligence",
+      "source": "novamind"
+    }
+  },
+  {
+    "id": "doc-004",
+    "title": "NovaMind Purpose",
+    "text": "NovaMind is designed to answer employee questions about company policies, projects, internal documentation, and technical procedures.",
+    "metadata": {
+      "category": "product",
+      "department": "Artificial Intelligence",
+      "source": "novamind"
+    }
+  },
+  {
+    "id": "doc-005",
+    "title": "NovaMind Project Leadership",
+    "text": "The NovaMind project was led by Priya Mehta, who is the fictional Head of Artificial Intelligence at NovaTech Solutions.",
+    "metadata": {
+      "category": "project",
+      "department": "Artificial Intelligence",
+      "source": "novamind"
+    }
+  },
+  {
+    "id": "doc-006",
+    "title": "AtlasHub Platform",
+    "text": "NovaTech Solutions uses a fictional internal knowledge platform called AtlasHub to store engineering documentation.",
+    "metadata": {
+      "category": "documentation",
+      "department": "Engineering",
+      "source": "atlashub"
+    }
+  },
+  {
+    "id": "doc-007",
+    "title": "AtlasHub Contents",
+    "text": "AtlasHub contains documentation for APIs, deployment procedures, incident response processes, and internal coding standards.",
+    "metadata": {
+      "category": "documentation",
+      "department": "Engineering",
+      "source": "atlashub"
+    }
+  },
+  {
+    "id": "doc-008",
+    "title": "AI Launchpad Training",
+    "text": "NovaTech Solutions has a fictional employee training program called AI Launchpad. The program lasts six weeks and covers Python, embeddings, vector databases, RAG, and AI agents.",
+    "metadata": {
+      "category": "training",
+      "department": "Artificial Intelligence",
+      "source": "ai_launchpad"
+    }
+  },
+  {
+    "id": "doc-009",
+    "title": "AI Launchpad Certification",
+    "text": "Employees who complete AI Launchpad receive a fictional internal certification called Nova AI Engineer Level 1.",
+    "metadata": {
+      "category": "training",
+      "department": "Artificial Intelligence",
+      "source": "ai_launchpad"
+    }
+  },
+  {
+    "id": "doc-010",
+    "title": "Weekly Technical Review",
+    "text": "The fictional NovaTech engineering team holds its weekly technical review meeting every Friday at 4 PM.",
+    "metadata": {
+      "category": "meeting",
+      "department": "Engineering",
+      "source": "technical_review"
+    }
+  }
+]
