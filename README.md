@@ -1,5 +1,4 @@
-
-## Day 6 — Machine Learning Intuition
+## Day 6 ï¿½ Machine Learning Intuition
 
 I trained a visual classifier using Google Teachable Machine with Bottle and Mobile classes.
 

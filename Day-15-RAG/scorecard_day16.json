@@ -1,0 +1,305 @@
+{
+  "summary": {
+    "total_tests": 15,
+    "retrieval_average_1_to_5": 3.33,
+    "answer_average_1_to_5": null,
+    "answer_tests_available": 0,
+    "answer_tests_pending": 15,
+    "generation_status": "Pending because OpenAI API credits are exhausted."
+  },
+  "tests": [
+    {
+      "test_id": "Q01",
+      "failure_mode": "retrieval_failure",
+      "query": "What is NovaTech's employee vacation policy?",
+      "expected_docs": [],
+      "retrieved_ids": [
+        "doc-004",
+        "doc-008",
+        "doc-001"
+      ],
+      "best_distance": 1.04423987865448,
+      "retrieval_quality": 1,
+      "answer_quality": null,
+      "answer_status": "Pending: OpenAI generation unavailable because API credits are exhausted.",
+      "diagnosis": "Retrieval failure: the query has no supporting document, but the retriever still returns unrelated NovaTech chunks."
+    },
+    {
+      "test_id": "Q02",
+      "failure_mode": "retrieval_failure",
+      "query": "What database technology does NovaTech use in production?",
+      "expected_docs": [],
+      "retrieved_ids": [
+        "doc-002",
+        "doc-001",
+        "doc-004"
+      ],
+      "best_distance": 0.9416682124137878,
+      "retrieval_quality": 1,
+      "answer_quality": null,
+      "answer_status": "Pending: OpenAI generation unavailable because API credits are exhausted.",
+      "diagnosis": "Retrieval failure: the query has no supporting document, but the retriever still returns unrelated NovaTech chunks."
+    },
+    {
+      "test_id": "Q03",
+      "failure_mode": "retrieval_failure",
+      "query": "Who is the Chief Financial Officer of NovaTech Solutions?",
+      "expected_docs": [],
+      "retrieved_ids": [
+        "doc-001",
+        "doc-002",
+        "doc-003"
+      ],
+      "best_distance": 0.6148037910461426,
+      "retrieval_quality": 1,
+      "answer_quality": null,
+      "answer_status": "Pending: OpenAI generation unavailable because API credits are exhausted.",
+      "diagnosis": "Retrieval failure: the query has no supporting document, but the retriever still returns unrelated NovaTech chunks."
+    },
+    {
+      "test_id": "Q04",
+      "failure_mode": "context_window_overflow",
+      "query": "Tell me everything about NovaTech Solutions, NovaMind, AtlasHub, AI Launchpad, and the engineering team's weekly meeting.",
+      "expected_docs": [
+        "doc-001",
+        "doc-002",
+        "doc-003",
+        "doc-004",
+        "doc-005",
+        "doc-006",
+        "doc-007",
+        "doc-008",
+        "doc-009",
+        "doc-010"
+      ],
+      "retrieved_ids": [
+        "doc-008",
+        "doc-002",
+        "doc-004"
+      ],
+      "best_distance": 0.6707834005355835,
+      "retrieval_quality": 2,
+      "answer_quality": null,
+      "answer_status": "Pending: OpenAI generation unavailable because API credits are exhausted.",
+      "diagnosis": "Context coverage failure: the query requests many topics, but top-k retrieval returned only 3 chunks."
+    },
+    {
+      "test_id": "Q05",
+      "failure_mode": "context_window_overflow",
+      "query": "Give a complete summary covering the company, departments, NovaMind, AtlasHub, training, certification, and engineering meetings.",
+      "expected_docs": [
+        "doc-001",
+        "doc-002",
+        "doc-003",
+        "doc-004",
+        "doc-005",
+        "doc-006",
+        "doc-007",
+        "doc-008",
+        "doc-009",
+        "doc-010"
+      ],
+      "retrieved_ids": [
+        "doc-007",
+        "doc-006",
+        "doc-004"
+      ],
+      "best_distance": 0.8901318907737732,
+      "retrieval_quality": 2,
+      "answer_quality": null,
+      "answer_status": "Pending: OpenAI generation unavailable because API credits are exhausted.",
+      "diagnosis": "Context coverage failure: the query requests many topics, but top-k retrieval returned only 3 chunks."
+    },
+    {
+      "test_id": "Q06",
+      "failure_mode": "context_window_overflow",
+      "query": "Explain all known NovaTech internal systems, projects, documentation, training programs, certifications, and recurring meetings.",
+      "expected_docs": [
+        "doc-003",
+        "doc-004",
+        "doc-005",
+        "doc-006",
+        "doc-007",
+        "doc-008",
+        "doc-009",
+        "doc-010"
+      ],
+      "retrieved_ids": [
+        "doc-002",
+        "doc-001",
+        "doc-004"
+      ],
+      "best_distance": 0.7185523509979248,
+      "retrieval_quality": 1,
+      "answer_quality": null,
+      "answer_status": "Pending: OpenAI generation unavailable because API credits are exhausted.",
+      "diagnosis": "Context coverage failure: the query requests many topics, but top-k retrieval returned only 3 chunks."
+    },
+    {
+      "test_id": "Q07",
+      "failure_mode": "answer_context_mismatch",
+      "query": "Who led the NovaMind project?",
+      "expected_docs": [
+        "doc-005"
+      ],
+      "retrieved_ids": [
+        "doc-005",
+        "doc-003",
+        "doc-004"
+      ],
+      "best_distance": 0.4764286279678345,
+      "retrieval_quality": 5,
+      "answer_quality": null,
+      "answer_status": "Pending: OpenAI generation unavailable because API credits are exhausted.",
+      "diagnosis": "Retrieval succeeded because the relevant chunk was retrieved; any wrong final answer would indicate answer-generation mismatch."
+    },
+    {
+      "test_id": "Q08",
+      "failure_mode": "answer_context_mismatch",
+      "query": "How long does AI Launchpad last?",
+      "expected_docs": [
+        "doc-008"
+      ],
+      "retrieved_ids": [
+        "doc-008",
+        "doc-009",
+        "doc-003"
+      ],
+      "best_distance": 0.7208505868911743,
+      "retrieval_quality": 5,
+      "answer_quality": null,
+      "answer_status": "Pending: OpenAI generation unavailable because API credits are exhausted.",
+      "diagnosis": "Retrieval succeeded because the relevant chunk was retrieved; any wrong final answer would indicate answer-generation mismatch."
+    },
+    {
+      "test_id": "Q09",
+      "failure_mode": "answer_context_mismatch",
+      "query": "Where is NovaTech Solutions headquartered?",
+      "expected_docs": [
+        "doc-001"
+      ],
+      "retrieved_ids": [
+        "doc-001",
+        "doc-002",
+        "doc-003"
+      ],
+      "best_distance": 0.2553212642669678,
+      "retrieval_quality": 5,
+      "answer_quality": null,
+      "answer_status": "Pending: OpenAI generation unavailable because API credits are exhausted.",
+      "diagnosis": "Retrieval succeeded because the relevant chunk was retrieved; any wrong final answer would indicate answer-generation mismatch."
+    },
+    {
+      "test_id": "Q10",
+      "failure_mode": "vague_context_retrieved",
+      "query": "Tell me about NovaMind.",
+      "expected_docs": [
+        "doc-003",
+        "doc-004",
+        "doc-005"
+      ],
+      "retrieved_ids": [
+        "doc-004",
+        "doc-003",
+        "doc-005"
+      ],
+      "best_distance": 0.6004236340522766,
+      "retrieval_quality": 4,
+      "answer_quality": null,
+      "answer_status": "Pending: OpenAI generation unavailable because API credits are exhausted.",
+      "diagnosis": "The query is broad, so multiple related chunks are retrieved instead of one sharply targeted passage."
+    },
+    {
+      "test_id": "Q11",
+      "failure_mode": "vague_context_retrieved",
+      "query": "Tell me about AtlasHub.",
+      "expected_docs": [
+        "doc-006",
+        "doc-007"
+      ],
+      "retrieved_ids": [
+        "doc-007",
+        "doc-006",
+        "doc-008"
+      ],
+      "best_distance": 0.7140364646911621,
+      "retrieval_quality": 4,
+      "answer_quality": null,
+      "answer_status": "Pending: OpenAI generation unavailable because API credits are exhausted.",
+      "diagnosis": "The query is broad, so multiple related chunks are retrieved instead of one sharply targeted passage."
+    },
+    {
+      "test_id": "Q12",
+      "failure_mode": "vague_context_retrieved",
+      "query": "Tell me about AI Launchpad.",
+      "expected_docs": [
+        "doc-008",
+        "doc-009"
+      ],
+      "retrieved_ids": [
+        "doc-008",
+        "doc-009",
+        "doc-003"
+      ],
+      "best_distance": 0.692439079284668,
+      "retrieval_quality": 4,
+      "answer_quality": null,
+      "answer_status": "Pending: OpenAI generation unavailable because API credits are exhausted.",
+      "diagnosis": "The query is broad, so multiple related chunks are retrieved instead of one sharply targeted passage."
+    },
+    {
+      "test_id": "Q13",
+      "failure_mode": "correct_chunk_wrong_answer",
+      "query": "Which city is NovaTech Solutions headquartered in?",
+      "expected_docs": [
+        "doc-001"
+      ],
+      "retrieved_ids": [
+        "doc-001",
+        "doc-002",
+        "doc-003"
+      ],
+      "best_distance": 0.29259124398231506,
+      "retrieval_quality": 5,
+      "answer_quality": null,
+      "answer_status": "Pending: OpenAI generation unavailable because API credits are exhausted.",
+      "diagnosis": "The correct chunk was retrieved, so a wrong answer would be a generation-stage failure."
+    },
+    {
+      "test_id": "Q14",
+      "failure_mode": "correct_chunk_wrong_answer",
+      "query": "Which person led the NovaMind project?",
+      "expected_docs": [
+        "doc-005"
+      ],
+      "retrieved_ids": [
+        "doc-005",
+        "doc-003",
+        "doc-004"
+      ],
+      "best_distance": 0.4595697224140167,
+      "retrieval_quality": 5,
+      "answer_quality": null,
+      "answer_status": "Pending: OpenAI generation unavailable because API credits are exhausted.",
+      "diagnosis": "The correct chunk was retrieved, so a wrong answer would be a generation-stage failure."
+    },
+    {
+      "test_id": "Q15",
+      "failure_mode": "correct_chunk_wrong_answer",
+      "query": "What certification do employees receive after completing AI Launchpad?",
+      "expected_docs": [
+        "doc-009"
+      ],
+      "retrieved_ids": [
+        "doc-009",
+        "doc-008",
+        "doc-003"
+      ],
+      "best_distance": 0.48415154218673706,
+      "retrieval_quality": 5,
+      "answer_quality": null,
+      "answer_status": "Pending: OpenAI generation unavailable because API credits are exhausted.",
+      "diagnosis": "The correct chunk was retrieved, so a wrong answer would be a generation-stage failure."
+    }
+  ]
+}

@@ -1,0 +1,499 @@
+{
+  "metadata": {
+    "project": "Day 16 - Diagnosing RAG Failure Modes",
+    "embedding_model": "all-MiniLM-L6-v2",
+    "retrieval_method": "FAISS IndexFlatL2",
+    "top_k": 3,
+    "distance_threshold": 0.8,
+    "document_count": 10,
+    "embedding_dimension": 384,
+    "generation_available": false,
+    "generation_note": "OpenAI generation is pending because the API account currently has no remaining credits."
+  },
+  "tests": [
+    {
+      "test_id": "Q01",
+      "failure_mode": "retrieval_failure",
+      "query": "What is NovaTech's employee vacation policy?",
+      "expected_docs": [],
+      "retrieved_docs": [],
+      "retrieved_ids": [],
+      "relevant_docs_retrieved": [],
+      "retrieval_success": true,
+      "best_distance": null,
+      "generated_answer": null,
+      "answer_quality": null,
+      "diagnosis": null,
+      "timestamp": "2026-09-08T22:58:03.857994"
+    },
+    {
+      "test_id": "Q02",
+      "failure_mode": "retrieval_failure",
+      "query": "What database technology does NovaTech use in production?",
+      "expected_docs": [],
+      "retrieved_docs": [],
+      "retrieved_ids": [],
+      "relevant_docs_retrieved": [],
+      "retrieval_success": true,
+      "best_distance": null,
+      "generated_answer": null,
+      "answer_quality": null,
+      "diagnosis": null,
+      "timestamp": "2026-09-08T22:58:03.880720"
+    },
+    {
+      "test_id": "Q03",
+      "failure_mode": "retrieval_failure",
+      "query": "Who is the Chief Financial Officer of NovaTech Solutions?",
+      "expected_docs": [],
+      "retrieved_docs": [
+        {
+          "id": "doc-001",
+          "text": "NovaTech Solutions is a fictional software company founded in 2023. Its headquarters is in Noida, India.",
+          "distance": 0.6148037910461426
+        },
+        {
+          "id": "doc-002",
+          "text": "NovaTech Solutions has three departments: Artificial Intelligence, Data Engineering, and Cloud Infrastructure.",
+          "distance": 0.7616176605224609
+        }
+      ],
+      "retrieved_ids": [
+        "doc-001",
+        "doc-002"
+      ],
+      "relevant_docs_retrieved": [],
+      "retrieval_success": false,
+      "best_distance": 0.6148037910461426,
+      "generated_answer": null,
+      "answer_quality": null,
+      "diagnosis": null,
+      "timestamp": "2026-09-08T22:58:03.895361"
+    },
+    {
+      "test_id": "Q04",
+      "failure_mode": "context_window_overflow",
+      "query": "Tell me everything about NovaTech Solutions, NovaMind, AtlasHub, AI Launchpad, and the engineering team's weekly meeting.",
+      "expected_docs": [
+        "doc-001",
+        "doc-002",
+        "doc-003",
+        "doc-004",
+        "doc-005",
+        "doc-006",
+        "doc-007",
+        "doc-008",
+        "doc-009",
+        "doc-010"
+      ],
+      "retrieved_docs": [
+        {
+          "id": "doc-008",
+          "text": "NovaTech Solutions has a fictional employee training program called AI Launchpad. The program lasts six weeks and covers Python, embeddings, vector databases, RAG, and AI agents.",
+          "distance": 0.6707834005355835
+        },
+        {
+          "id": "doc-002",
+          "text": "NovaTech Solutions has three departments: Artificial Intelligence, Data Engineering, and Cloud Infrastructure.",
+          "distance": 0.7939774990081787
+        },
+        {
+          "id": "doc-004",
+          "text": "NovaMind is designed to answer employee questions about company policies, projects, internal documentation, and technical procedures.",
+          "distance": 0.7958751916885376
+        }
+      ],
+      "retrieved_ids": [
+        "doc-008",
+        "doc-002",
+        "doc-004"
+      ],
+      "relevant_docs_retrieved": [
+        "doc-002",
+        "doc-004",
+        "doc-008"
+      ],
+      "retrieval_success": true,
+      "best_distance": 0.6707834005355835,
+      "generated_answer": null,
+      "answer_quality": null,
+      "diagnosis": null,
+      "timestamp": "2026-09-08T22:58:03.921989"
+    },
+    {
+      "test_id": "Q05",
+      "failure_mode": "context_window_overflow",
+      "query": "Give a complete summary covering the company, departments, NovaMind, AtlasHub, training, certification, and engineering meetings.",
+      "expected_docs": [
+        "doc-001",
+        "doc-002",
+        "doc-003",
+        "doc-004",
+        "doc-005",
+        "doc-006",
+        "doc-007",
+        "doc-008",
+        "doc-009",
+        "doc-010"
+      ],
+      "retrieved_docs": [],
+      "retrieved_ids": [],
+      "relevant_docs_retrieved": [],
+      "retrieval_success": false,
+      "best_distance": null,
+      "generated_answer": null,
+      "answer_quality": null,
+      "diagnosis": null,
+      "timestamp": "2026-09-08T22:58:03.945873"
+    },
+    {
+      "test_id": "Q06",
+      "failure_mode": "context_window_overflow",
+      "query": "Explain all known NovaTech internal systems, projects, documentation, training programs, certifications, and recurring meetings.",
+      "expected_docs": [
+        "doc-003",
+        "doc-004",
+        "doc-005",
+        "doc-006",
+        "doc-007",
+        "doc-008",
+        "doc-009",
+        "doc-010"
+      ],
+      "retrieved_docs": [
+        {
+          "id": "doc-002",
+          "text": "NovaTech Solutions has three departments: Artificial Intelligence, Data Engineering, and Cloud Infrastructure.",
+          "distance": 0.7185523509979248
+        },
+        {
+          "id": "doc-001",
+          "text": "NovaTech Solutions is a fictional software company founded in 2023. Its headquarters is in Noida, India.",
+          "distance": 0.7549066543579102
+        },
+        {
+          "id": "doc-004",
+          "text": "NovaMind is designed to answer employee questions about company policies, projects, internal documentation, and technical procedures.",
+          "distance": 0.7652989625930786
+        }
+      ],
+      "retrieved_ids": [
+        "doc-002",
+        "doc-001",
+        "doc-004"
+      ],
+      "relevant_docs_retrieved": [
+        "doc-004"
+      ],
+      "retrieval_success": true,
+      "best_distance": 0.7185523509979248,
+      "generated_answer": null,
+      "answer_quality": null,
+      "diagnosis": null,
+      "timestamp": "2026-09-08T22:58:03.969149"
+    },
+    {
+      "test_id": "Q07",
+      "failure_mode": "answer_context_mismatch",
+      "query": "Who led the NovaMind project?",
+      "expected_docs": [
+        "doc-005"
+      ],
+      "retrieved_docs": [
+        {
+          "id": "doc-005",
+          "text": "The NovaMind project was led by Priya Mehta, who is the fictional Head of Artificial Intelligence at NovaTech Solutions.",
+          "distance": 0.4764286279678345
+        },
+        {
+          "id": "doc-003",
+          "text": "NovaTech Solutions launched its internal AI assistant called NovaMind in February 2026.",
+          "distance": 0.632922887802124
+        },
+        {
+          "id": "doc-004",
+          "text": "NovaMind is designed to answer employee questions about company policies, projects, internal documentation, and technical procedures.",
+          "distance": 0.7194154262542725
+        }
+      ],
+      "retrieved_ids": [
+        "doc-005",
+        "doc-003",
+        "doc-004"
+      ],
+      "relevant_docs_retrieved": [
+        "doc-005"
+      ],
+      "retrieval_success": true,
+      "best_distance": 0.4764286279678345,
+      "generated_answer": null,
+      "answer_quality": null,
+      "diagnosis": null,
+      "timestamp": "2026-09-08T22:58:03.990980"
+    },
+    {
+      "test_id": "Q08",
+      "failure_mode": "answer_context_mismatch",
+      "query": "How long does AI Launchpad last?",
+      "expected_docs": [
+        "doc-008"
+      ],
+      "retrieved_docs": [
+        {
+          "id": "doc-008",
+          "text": "NovaTech Solutions has a fictional employee training program called AI Launchpad. The program lasts six weeks and covers Python, embeddings, vector databases, RAG, and AI agents.",
+          "distance": 0.7208505868911743
+        }
+      ],
+      "retrieved_ids": [
+        "doc-008"
+      ],
+      "relevant_docs_retrieved": [
+        "doc-008"
+      ],
+      "retrieval_success": true,
+      "best_distance": 0.7208505868911743,
+      "generated_answer": null,
+      "answer_quality": null,
+      "diagnosis": null,
+      "timestamp": "2026-09-08T22:58:04.004478"
+    },
+    {
+      "test_id": "Q09",
+      "failure_mode": "answer_context_mismatch",
+      "query": "Where is NovaTech Solutions headquartered?",
+      "expected_docs": [
+        "doc-001"
+      ],
+      "retrieved_docs": [
+        {
+          "id": "doc-001",
+          "text": "NovaTech Solutions is a fictional software company founded in 2023. Its headquarters is in Noida, India.",
+          "distance": 0.2553212642669678
+        },
+        {
+          "id": "doc-002",
+          "text": "NovaTech Solutions has three departments: Artificial Intelligence, Data Engineering, and Cloud Infrastructure.",
+          "distance": 0.6212424039840698
+        }
+      ],
+      "retrieved_ids": [
+        "doc-001",
+        "doc-002"
+      ],
+      "relevant_docs_retrieved": [
+        "doc-001"
+      ],
+      "retrieval_success": true,
+      "best_distance": 0.2553212642669678,
+      "generated_answer": null,
+      "answer_quality": null,
+      "diagnosis": null,
+      "timestamp": "2026-09-08T22:58:04.028491"
+    },
+    {
+      "test_id": "Q10",
+      "failure_mode": "vague_context_retrieved",
+      "query": "Tell me about NovaMind.",
+      "expected_docs": [
+        "doc-003",
+        "doc-004",
+        "doc-005"
+      ],
+      "retrieved_docs": [
+        {
+          "id": "doc-004",
+          "text": "NovaMind is designed to answer employee questions about company policies, projects, internal documentation, and technical procedures.",
+          "distance": 0.6004236340522766
+        },
+        {
+          "id": "doc-003",
+          "text": "NovaTech Solutions launched its internal AI assistant called NovaMind in February 2026.",
+          "distance": 0.6351023316383362
+        },
+        {
+          "id": "doc-005",
+          "text": "The NovaMind project was led by Priya Mehta, who is the fictional Head of Artificial Intelligence at NovaTech Solutions.",
+          "distance": 0.6427679657936096
+        }
+      ],
+      "retrieved_ids": [
+        "doc-004",
+        "doc-003",
+        "doc-005"
+      ],
+      "relevant_docs_retrieved": [
+        "doc-003",
+        "doc-004",
+        "doc-005"
+      ],
+      "retrieval_success": true,
+      "best_distance": 0.6004236340522766,
+      "generated_answer": null,
+      "answer_quality": null,
+      "diagnosis": null,
+      "timestamp": "2026-09-08T22:58:04.052255"
+    },
+    {
+      "test_id": "Q11",
+      "failure_mode": "vague_context_retrieved",
+      "query": "Tell me about AtlasHub.",
+      "expected_docs": [
+        "doc-006",
+        "doc-007"
+      ],
+      "retrieved_docs": [
+        {
+          "id": "doc-007",
+          "text": "AtlasHub contains documentation for APIs, deployment procedures, incident response processes, and internal coding standards.",
+          "distance": 0.7140364646911621
+        }
+      ],
+      "retrieved_ids": [
+        "doc-007"
+      ],
+      "relevant_docs_retrieved": [
+        "doc-007"
+      ],
+      "retrieval_success": true,
+      "best_distance": 0.7140364646911621,
+      "generated_answer": null,
+      "answer_quality": null,
+      "diagnosis": null,
+      "timestamp": "2026-09-08T22:58:04.070218"
+    },
+    {
+      "test_id": "Q12",
+      "failure_mode": "vague_context_retrieved",
+      "query": "Tell me about AI Launchpad.",
+      "expected_docs": [
+        "doc-008",
+        "doc-009"
+      ],
+      "retrieved_docs": [
+        {
+          "id": "doc-008",
+          "text": "NovaTech Solutions has a fictional employee training program called AI Launchpad. The program lasts six weeks and covers Python, embeddings, vector databases, RAG, and AI agents.",
+          "distance": 0.692439079284668
+        }
+      ],
+      "retrieved_ids": [
+        "doc-008"
+      ],
+      "relevant_docs_retrieved": [
+        "doc-008"
+      ],
+      "retrieval_success": true,
+      "best_distance": 0.692439079284668,
+      "generated_answer": null,
+      "answer_quality": null,
+      "diagnosis": null,
+      "timestamp": "2026-09-08T22:58:04.090854"
+    },
+    {
+      "test_id": "Q13",
+      "failure_mode": "correct_chunk_wrong_answer",
+      "query": "Which city is NovaTech Solutions headquartered in?",
+      "expected_docs": [
+        "doc-001"
+      ],
+      "retrieved_docs": [
+        {
+          "id": "doc-001",
+          "text": "NovaTech Solutions is a fictional software company founded in 2023. Its headquarters is in Noida, India.",
+          "distance": 0.29259124398231506
+        },
+        {
+          "id": "doc-002",
+          "text": "NovaTech Solutions has three departments: Artificial Intelligence, Data Engineering, and Cloud Infrastructure.",
+          "distance": 0.5944346785545349
+        }
+      ],
+      "retrieved_ids": [
+        "doc-001",
+        "doc-002"
+      ],
+      "relevant_docs_retrieved": [
+        "doc-001"
+      ],
+      "retrieval_success": true,
+      "best_distance": 0.29259124398231506,
+      "generated_answer": null,
+      "answer_quality": null,
+      "diagnosis": null,
+      "timestamp": "2026-09-08T22:58:04.111292"
+    },
+    {
+      "test_id": "Q14",
+      "failure_mode": "correct_chunk_wrong_answer",
+      "query": "Which person led the NovaMind project?",
+      "expected_docs": [
+        "doc-005"
+      ],
+      "retrieved_docs": [
+        {
+          "id": "doc-005",
+          "text": "The NovaMind project was led by Priya Mehta, who is the fictional Head of Artificial Intelligence at NovaTech Solutions.",
+          "distance": 0.4595697224140167
+        },
+        {
+          "id": "doc-003",
+          "text": "NovaTech Solutions launched its internal AI assistant called NovaMind in February 2026.",
+          "distance": 0.6829210519790649
+        },
+        {
+          "id": "doc-004",
+          "text": "NovaMind is designed to answer employee questions about company policies, projects, internal documentation, and technical procedures.",
+          "distance": 0.7858628034591675
+        }
+      ],
+      "retrieved_ids": [
+        "doc-005",
+        "doc-003",
+        "doc-004"
+      ],
+      "relevant_docs_retrieved": [
+        "doc-005"
+      ],
+      "retrieval_success": true,
+      "best_distance": 0.4595697224140167,
+      "generated_answer": null,
+      "answer_quality": null,
+      "diagnosis": null,
+      "timestamp": "2026-09-08T22:58:04.124918"
+    },
+    {
+      "test_id": "Q15",
+      "failure_mode": "correct_chunk_wrong_answer",
+      "query": "What certification do employees receive after completing AI Launchpad?",
+      "expected_docs": [
+        "doc-009"
+      ],
+      "retrieved_docs": [
+        {
+          "id": "doc-009",
+          "text": "Employees who complete AI Launchpad receive a fictional internal certification called Nova AI Engineer Level 1.",
+          "distance": 0.48415154218673706
+        },
+        {
+          "id": "doc-008",
+          "text": "NovaTech Solutions has a fictional employee training program called AI Launchpad. The program lasts six weeks and covers Python, embeddings, vector databases, RAG, and AI agents.",
+          "distance": 0.7696276307106018
+        }
+      ],
+      "retrieved_ids": [
+        "doc-009",
+        "doc-008"
+      ],
+      "relevant_docs_retrieved": [
+        "doc-009"
+      ],
+      "retrieval_success": true,
+      "best_distance": 0.48415154218673706,
+      "generated_answer": null,
+      "answer_quality": null,
+      "diagnosis": null,
+      "timestamp": "2026-09-08T22:58:04.149067"
+    }
+  ]
+}
