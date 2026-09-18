@@ -1,0 +1,42 @@
+[
+    {
+        "id": 1,
+        "title": "Python",
+        "content": "Python is a high-level, interpreted programming language known for readability and a large ecosystem of libraries."
+    },
+    {
+        "id": 2,
+        "title": "Machine Learning",
+        "content": "Machine learning is a branch of artificial intelligence where systems learn patterns from data to make predictions or decisions."
+    },
+    {
+        "id": 3,
+        "title": "RAG",
+        "content": "Retrieval-Augmented Generation combines information retrieval with language generation. A retriever finds relevant documents and an LLM uses them to generate an answer."
+    },
+    {
+        "id": 4,
+        "title": "FAISS",
+        "content": "FAISS is a library for efficient similarity search and clustering of dense vectors."
+    },
+    {
+        "id": 5,
+        "title": "API",
+        "content": "An API is an interface that allows software applications to communicate with each other."
+    },
+    {
+        "id": 6,
+        "title": "FastAPI",
+        "content": "FastAPI is a modern Python web framework for building APIs using Python type hints."
+    },
+    {
+        "id": 7,
+        "title": "Conversation Memory",
+        "content": "Conversation memory allows an AI system to retain relevant information from previous turns and use it as context for future responses."
+    },
+    {
+        "id": 8,
+        "title": "AI Agents",
+        "content": "An AI agent is a system that can reason about a task, select tools, execute actions, observe results, and continue working toward a goal."
+    }
+]
