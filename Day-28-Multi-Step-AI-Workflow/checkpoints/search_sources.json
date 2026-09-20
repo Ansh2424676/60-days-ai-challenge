@@ -1,0 +1,23 @@
+{
+  "topic": "AI Agents",
+  "retrieved_chunks": [
+    {
+      "title": "AI Agents",
+      "content": "AI agents combine language models, tools, memory, and workflows to perform multi-step tasks.",
+      "score": 2
+    },
+    {
+      "title": "Machine Learning",
+      "content": "Machine learning is a subset of AI where systems learn patterns from data and use those patterns to make predictions or decisions.",
+      "score": 1
+    }
+  ],
+  "extracted_points": [],
+  "synthesis_text": "",
+  "final_report": "",
+  "current_step": "search_sources",
+  "error": null,
+  "completed_steps": [
+    "search_sources"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "state": {
+    "topic": "FastAPI",
+    "current_step": "extract_key_points",
+    "retrieved_chunks": 1,
+    "extracted_points": 0,
+    "has_synthesis": false,
+    "has_report": false,
+    "completed_steps": [
+      "search_sources"
+    ],
+    "error": "Error code: 401 - {'error': {'message': 'Incorrect API key provided: sk-proj-************xxxx. You can find your API key at https://platform.openai.com/account/api-keys.', 'type': 'invalid_request_error', 'code': 'invalid_api_key', 'param': None}, 'status': 401}"
+  },
+  "retrieved_chunks": [
+    {
+      "title": "FastAPI",
+      "content": "FastAPI is a Python framework for building APIs using Python type hints and automatic validation.",
+      "score": 1
+    }
+  ],
+  "extracted_points": [],
+  "synthesis_text": "",
+  "final_report": ""
+}
