@@ -1,3 +1,6 @@
 .ipynb_checkpoints/
 __pycache__/
 *.pyc
+
+.env
+Day-32-Latency-Optimisation/.env
