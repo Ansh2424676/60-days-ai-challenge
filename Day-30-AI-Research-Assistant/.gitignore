@@ -1,0 +1,25 @@
+# Environment
+.env
+.venv/
+venv/
+__pycache__/
+*.pyc
+
+# Logs
+logs/
+*.log
+
+# Generated reports
+reports/
+
+# Next.js
+node_modules/
+.next/
+out/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
