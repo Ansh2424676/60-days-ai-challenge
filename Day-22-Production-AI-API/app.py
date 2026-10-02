@@ -455,3 +455,36 @@ async def test_retrieval_failure():
             request_id=request_id,
             http_status=500
         )
+from pydantic import BaseModel
+from feedback_db import init_feedback_table, save_feedback
+
+
+class FeedbackRequest(BaseModel):
+    session_id: str
+    query: str
+    response_excerpt: str
+    rating: int
+
+
+init_feedback_table()
+
+
+@app.post("/feedback")
+def submit_feedback(feedback: FeedbackRequest):
+    if feedback.rating not in (1, -1):
+        return {
+            "success": False,
+            "message": "Rating must be 1 or -1"
+        }
+
+    save_feedback(
+        session_id=feedback.session_id,
+        query=feedback.query,
+        response_excerpt=feedback.response_excerpt[:100],
+        rating=feedback.rating
+    )
+
+    return {
+        "success": True,
+        "message": "Feedback received"
+    }
