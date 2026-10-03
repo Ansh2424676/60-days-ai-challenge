@@ -1,6 +1,53 @@
-.ipynb_checkpoints/
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*.pyo
 
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Environment variables / secrets
 .env
-Day-32-Latency-Optimisation/.env
+.env.*
+!.env.example
+
+# Databases / local data
+*.db
+*.sqlite
+*.sqlite3
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Build / cache
+dist/
+build/
+*.egg-info/
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+
+# Local AI / vector-store generated files
+.faiss/
+chroma/
+chroma_db/
+vector_store/
+
+# Temporary files
+*.tmp
+*.temp
+
+# Jupyter
+.ipynb_checkpoints/
