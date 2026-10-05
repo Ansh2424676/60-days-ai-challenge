@@ -1,0 +1,5 @@
+Title: FAISS Metadata Management
+Category: FAISS
+
+FAISS primarily stores vectors. Applications commonly maintain a separate metadata
+mapping that connects vector positions with source documents and chunk information.

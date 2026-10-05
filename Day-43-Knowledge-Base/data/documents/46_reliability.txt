@@ -1,0 +1,5 @@
+Title: AI Reliability
+Category: Reliability
+
+Reliable AI applications use timeouts, retries, circuit breakers, health checks,
+logging, and graceful failure handling for external dependencies.

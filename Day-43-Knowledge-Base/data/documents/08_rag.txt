@@ -1,0 +1,6 @@
+Title: Hybrid Search
+Category: RAG
+
+Hybrid search combines semantic vector search with keyword-based search. This approach
+can improve retrieval when exact terms, identifiers, or domain-specific terminology
+are important.

@@ -1,0 +1,5 @@
+Title: FastAPI Async Endpoints
+Category: FastAPI
+
+Async endpoints allow FastAPI applications to handle I/O-bound operations efficiently.
+They are useful when applications communicate with databases, APIs, or external services.

@@ -1,0 +1,6 @@
+Title: Document Preprocessing
+Category: Data Engineering
+
+Document preprocessing cleans source content before embedding. Common operations
+include whitespace normalization, removing boilerplate, stripping HTML, and handling
+page breaks.

@@ -1,0 +1,5 @@
+Title: AI Product Metrics
+Category: Product
+
+AI products should track metrics such as retrieval success, response latency, error
+rate, user feedback, token consumption, and task completion.

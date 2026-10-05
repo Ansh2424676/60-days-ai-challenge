@@ -1,0 +1,5 @@
+Title: Embedding Similarity
+Category: Embeddings
+
+Cosine similarity is commonly used to compare embedding vectors. Higher similarity
+indicates that two vectors are more semantically related.

@@ -1,0 +1,5 @@
+Title: Circuit Breaker Pattern
+Category: Reliability
+
+A circuit breaker temporarily stops requests to a failing dependency. This prevents
+cascading failures and gives the dependency time to recover.

@@ -1,0 +1,5 @@
+Title: FastAPI Health Checks
+Category: FastAPI
+
+Health endpoints provide a simple way to determine whether an application and its
+critical dependencies are functioning correctly.

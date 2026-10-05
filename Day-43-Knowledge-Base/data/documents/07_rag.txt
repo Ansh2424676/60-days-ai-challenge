@@ -1,0 +1,6 @@
+Title: RAG Evaluation
+Category: RAG
+
+RAG systems should be evaluated separately for retrieval and generation. Retrieval
+evaluation checks whether relevant chunks are returned, while generation evaluation
+checks whether the final answer is correct and grounded.

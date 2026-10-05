@@ -1,0 +1,5 @@
+Title: Vector Embeddings
+Category: Embeddings
+
+Embeddings convert text into numerical vectors representing semantic meaning. Similar
+texts generally produce vectors that are close together in embedding space.

@@ -1,0 +1,7 @@
+Title: Retrieval Augmented Generation
+Category: RAG
+
+Retrieval Augmented Generation combines information retrieval with large language models.
+A RAG system retrieves relevant information from an external knowledge base before generating
+an answer. The main stages are ingestion, preprocessing, chunking, embedding generation,
+vector indexing, retrieval, prompt construction, and answer generation.

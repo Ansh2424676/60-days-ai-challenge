@@ -1,0 +1,5 @@
+Title: Vector Database Architecture
+Category: FAISS
+
+A vector search system normally contains embeddings, an index, metadata, and retrieval
+logic. The metadata layer allows retrieved vectors to be mapped back to source content.

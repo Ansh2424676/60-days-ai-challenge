@@ -1,0 +1,5 @@
+Title: LLM Application Latency
+Category: LLM Architecture
+
+LLM latency can come from retrieval, network requests, model generation, and database
+operations. Caching, streaming, batching, and smaller prompts can reduce latency.

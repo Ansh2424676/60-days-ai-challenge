@@ -1,0 +1,5 @@
+Title: FAISS Vector Search
+Category: FAISS
+
+FAISS is a library for efficient similarity search over dense vectors. It can index
+large collections of embeddings and retrieve vectors that are closest to a query vector.

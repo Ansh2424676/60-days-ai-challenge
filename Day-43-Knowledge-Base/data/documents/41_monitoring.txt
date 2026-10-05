@@ -1,0 +1,5 @@
+Title: AI Observability
+Category: Monitoring
+
+AI observability involves tracking latency, errors, token usage, retrieval quality,
+user feedback, and model outputs. These metrics help identify production problems.

@@ -1,0 +1,5 @@
+Title: Cache Invalidation
+Category: Caching
+
+Cache invalidation ensures stale data does not remain available after the underlying
+knowledge changes. Time-based expiration and versioning are common approaches.

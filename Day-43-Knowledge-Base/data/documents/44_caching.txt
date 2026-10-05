@@ -1,0 +1,5 @@
+Title: Semantic Response Cache
+Category: Caching
+
+Semantic caching stores responses for queries that are sufficiently similar in meaning.
+It can reduce repeated LLM calls and improve application latency.

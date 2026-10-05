@@ -1,0 +1,6 @@
+Title: Semantic Search
+Category: RAG
+
+Semantic search retrieves documents based on meaning rather than exact keyword matches.
+Embedding models represent text as vectors, allowing similar concepts to be identified
+even when different words are used.

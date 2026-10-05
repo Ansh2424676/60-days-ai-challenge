@@ -1,0 +1,5 @@
+Title: Embedding Models
+Category: Embeddings
+
+Embedding models transform text into fixed-dimensional numerical representations.
+The choice of embedding model affects retrieval accuracy, latency, and cost.

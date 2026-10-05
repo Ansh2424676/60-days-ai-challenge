@@ -1,0 +1,5 @@
+Title: FAISS IndexFlatL2
+Category: FAISS
+
+IndexFlatL2 performs exact nearest-neighbor search using Euclidean distance. It is
+simple and useful for smaller datasets where exact retrieval is acceptable.

@@ -1,0 +1,6 @@
+Title: LLM Evaluation
+Category: Evaluation
+
+LLM evaluation measures system quality using representative queries and expected
+answers. Evaluation should cover correctness, relevance, groundedness, and retrieval
+quality.

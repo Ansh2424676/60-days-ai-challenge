@@ -1,0 +1,5 @@
+Title: LLM Cost Management
+Category: LLM Architecture
+
+LLM costs depend on token usage, model selection, request frequency, and prompt size.
+Applications should monitor token consumption and optimize repeated requests.

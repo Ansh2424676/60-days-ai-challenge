@@ -1,0 +1,9 @@
+Title: Redis Vector Cache
+
+Category: Caching
+
+Redis can be used to cache vector retrieval results in AI applications.
+Caching repeated semantic search operations can reduce database and embedding
+latency. A vector cache can store frequently requested query representations
+and their corresponding retrieval results. Cache expiration should be configured
+to prevent stale knowledge from remaining available indefinitely.

@@ -1,0 +1,6 @@
+Title: Chunking Strategies for RAG
+Category: RAG
+
+Document chunking divides large documents into smaller pieces that can be embedded and
+retrieved independently. Chunk size should preserve enough context while remaining
+specific enough for accurate retrieval.

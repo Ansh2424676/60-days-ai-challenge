@@ -1,0 +1,5 @@
+Title: AI Feedback Systems
+Category: Product
+
+User feedback such as thumbs-up and thumbs-down can provide evidence about AI product
+quality. Feedback should be stored with query and response metadata for analysis.

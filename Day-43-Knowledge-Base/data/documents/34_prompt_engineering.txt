@@ -1,0 +1,5 @@
+Title: Few Shot Prompting
+Category: Prompt Engineering
+
+Few-shot prompting provides examples of desired input-output behavior. Examples help
+language models infer formatting and reasoning patterns without model fine-tuning.

@@ -1,0 +1,5 @@
+Title: Redis Caching
+Category: Caching
+
+Redis is an in-memory data store commonly used for caching. AI applications can cache
+expensive retrieval results, embeddings, or frequently requested responses.

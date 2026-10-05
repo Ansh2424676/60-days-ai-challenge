@@ -1,0 +1,5 @@
+Title: Embedding Dimensions
+Category: Embeddings
+
+Embedding dimensionality determines the number of numerical values in each vector.
+Higher dimensions may represent more information but require more memory and computation.

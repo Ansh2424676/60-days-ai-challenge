@@ -1,0 +1,5 @@
+Title: Structured LLM Output
+Category: Prompt Engineering
+
+Structured output constrains language model responses to a predictable schema. JSON
+schemas and typed validation can make downstream processing more reliable.

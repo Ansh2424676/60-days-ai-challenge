@@ -1,0 +1,5 @@
+Title: LLM System Architecture
+Category: LLM Architecture
+
+A production LLM application commonly contains an API layer, orchestration layer,
+retrieval system, model provider, storage, monitoring, and caching infrastructure.

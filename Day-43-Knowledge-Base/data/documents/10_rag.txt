@@ -1,0 +1,5 @@
+Title: Retrieval Top K
+Category: RAG
+
+Top K controls how many candidate chunks are returned by a retriever. A small K can
+miss useful context while a large K may introduce irrelevant information.

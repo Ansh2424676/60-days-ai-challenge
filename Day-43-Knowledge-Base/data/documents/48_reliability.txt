@@ -1,0 +1,5 @@
+Title: Retry Strategies
+Category: Reliability
+
+Retries can recover from temporary network or API failures. Exponential backoff and
+maximum retry limits prevent excessive repeated requests.

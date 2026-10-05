@@ -1,0 +1,6 @@
+Title: Embedding Drift
+Category: Embeddings
+
+Embedding drift can occur when an embedding model changes or when the underlying
+document distribution changes. Consistent embedding models help maintain retrieval
+quality over time.

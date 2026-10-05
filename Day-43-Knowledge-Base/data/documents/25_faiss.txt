@@ -1,0 +1,5 @@
+Title: FAISS Incremental Updates
+Category: FAISS
+
+New vectors can be added to compatible FAISS indexes using add operations. This allows
+applications to update their knowledge base without rebuilding the entire index.

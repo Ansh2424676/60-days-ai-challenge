@@ -1,0 +1,5 @@
+Title: Vector Normalization
+Category: Embeddings
+
+Vector normalization scales embeddings to a consistent magnitude. Normalized vectors
+are commonly used when similarity is measured using cosine similarity or inner product.

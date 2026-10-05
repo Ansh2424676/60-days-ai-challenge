@@ -1,0 +1,6 @@
+Title: RAG Retrieval Pipeline
+Category: RAG
+
+A RAG retrieval pipeline converts a user query into an embedding and compares it with
+document embeddings stored in a vector index. The most similar chunks are returned as
+context for the language model.

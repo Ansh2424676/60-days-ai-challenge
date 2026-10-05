@@ -1,0 +1,6 @@
+Title: RAG Context Window
+Category: RAG
+
+The context window determines how much retrieved information can be passed to an LLM.
+Too much irrelevant context can reduce answer quality, while too little context may omit
+important evidence.

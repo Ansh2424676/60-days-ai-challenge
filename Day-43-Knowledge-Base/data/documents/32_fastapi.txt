@@ -1,0 +1,5 @@
+Title: FastAPI Streaming
+Category: FastAPI
+
+Streaming responses allow an API to send generated content incrementally instead of
+waiting for the complete response. This can improve perceived latency in AI applications.

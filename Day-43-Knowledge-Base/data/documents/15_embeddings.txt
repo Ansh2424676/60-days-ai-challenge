@@ -1,0 +1,6 @@
+Title: Embedding Cost Optimization
+Category: Embeddings
+
+Embedding cost depends on the number of tokens processed and the pricing of the
+embedding model. Removing duplicate or low-quality documents before embedding can
+reduce unnecessary cost.

@@ -1,0 +1,5 @@
+Title: Knowledge Base Quality
+Category: Data Engineering
+
+Knowledge base quality strongly influences retrieval quality. Duplicate, outdated,
+irrelevant, or poorly formatted documents can reduce the usefulness of an AI system.

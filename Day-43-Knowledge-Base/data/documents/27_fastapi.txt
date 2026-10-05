@@ -1,0 +1,6 @@
+Title: FastAPI Introduction
+Category: FastAPI
+
+FastAPI is a Python framework for building APIs. It provides automatic validation,
+OpenAPI documentation, asynchronous support, and strong integration with Python type
+hints.

@@ -1,0 +1,6 @@
+Title: Prompt Injection
+Category: AI Safety
+
+Prompt injection occurs when untrusted content attempts to manipulate an AI system's
+instructions. Applications should separate trusted instructions from untrusted retrieved
+content and validate tool actions.

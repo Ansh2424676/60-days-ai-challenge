@@ -1,0 +1,5 @@
+Title: FAISS IndexFlatIP
+Category: FAISS
+
+IndexFlatIP performs inner-product similarity search. With normalized embeddings,
+inner product can be used to approximate cosine similarity.

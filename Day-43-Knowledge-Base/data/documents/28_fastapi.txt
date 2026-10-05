@@ -1,0 +1,5 @@
+Title: FastAPI Pydantic Validation
+Category: FastAPI
+
+FastAPI uses Pydantic models to validate incoming request data. Validation errors can
+be automatically returned to API clients in a structured format.

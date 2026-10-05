@@ -1,0 +1,5 @@
+Title: Embedding Batch Processing
+Category: Embeddings
+
+Batching multiple texts into one embedding request can improve ingestion efficiency.
+Batch sizes should respect API limits and application memory constraints.

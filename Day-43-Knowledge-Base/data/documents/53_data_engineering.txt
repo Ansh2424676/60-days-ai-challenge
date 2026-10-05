@@ -1,0 +1,5 @@
+Title: Data Ingestion Pipeline
+Category: Data Engineering
+
+A reliable ingestion pipeline loads source documents, validates them, preprocesses
+content, chunks documents, generates embeddings, stores vectors, and records metadata.

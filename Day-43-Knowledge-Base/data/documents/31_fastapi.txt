@@ -1,0 +1,5 @@
+Title: FastAPI Error Handling
+Category: FastAPI
+
+Production APIs should handle expected errors consistently. FastAPI supports custom
+HTTP exceptions and centralized exception handling.

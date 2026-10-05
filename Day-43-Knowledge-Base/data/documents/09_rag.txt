@@ -1,0 +1,5 @@
+Title: Metadata Filtering in RAG
+Category: RAG
+
+Metadata can be attached to every document chunk. Fields such as source, category,
+date, and document type can be used to filter retrieval results before semantic search.

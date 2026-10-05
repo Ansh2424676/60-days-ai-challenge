@@ -1,0 +1,6 @@
+Title: Prompt Engineering
+Category: Prompt Engineering
+
+Prompt engineering involves designing instructions that guide language model behavior.
+Clear objectives, relevant context, constraints, and expected output formats improve
+reliability.

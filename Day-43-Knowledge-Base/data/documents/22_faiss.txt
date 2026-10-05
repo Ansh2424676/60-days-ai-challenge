@@ -1,0 +1,5 @@
+Title: FAISS Index Persistence
+Category: FAISS
+
+FAISS indexes can be written to disk and loaded later. Persisting the index avoids
+rebuilding embeddings every time an application starts.

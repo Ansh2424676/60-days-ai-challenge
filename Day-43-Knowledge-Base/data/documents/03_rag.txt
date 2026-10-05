@@ -1,0 +1,6 @@
+Title: RAG Hallucination Reduction
+Category: RAG
+
+RAG can reduce hallucination by providing external evidence to the language model.
+However, retrieval quality directly affects answer quality. Incorrect retrieved context
+can cause the model to generate incorrect answers.

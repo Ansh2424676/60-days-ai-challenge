@@ -1,0 +1,5 @@
+Title: FAISS Scalability
+Category: FAISS
+
+FAISS provides multiple index types for scaling vector search. Approximate nearest
+neighbor indexes can improve search performance for very large collections.

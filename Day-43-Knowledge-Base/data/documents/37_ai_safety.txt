@@ -1,0 +1,6 @@
+Title: Indirect Prompt Injection
+Category: AI Safety
+
+Indirect prompt injection occurs when malicious instructions are hidden inside external
+documents, web pages, or retrieved content. RAG systems must treat retrieved content
+as untrusted data.
