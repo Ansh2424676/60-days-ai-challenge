@@ -1,0 +1,222 @@
+[
+  {
+    "query_id": 1,
+    "query": "What is the product's purpose?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.001,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 2,
+    "query": "Who is the target user?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.002,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 3,
+    "query": "What are the main features?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 4,
+    "query": "Explain the system architecture.",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 5,
+    "query": "How does retrieval work?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 6,
+    "query": "What are the known limitations?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 7,
+    "query": "How is a response generated?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 8,
+    "query": "What happens when context is missing?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 9,
+    "query": "How is quality evaluated?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 10,
+    "query": "Explain the data ingestion process.",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 11,
+    "query": "How does the API handle requests?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 12,
+    "query": "What is the role of the knowledge base?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 13,
+    "query": "How are errors handled?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 14,
+    "query": "How does the system handle long inputs?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 15,
+    "query": "What makes an answer reliable?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 16,
+    "query": "How should unsupported questions be handled?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 17,
+    "query": "How can latency be measured?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 18,
+    "query": "How can token usage be reduced?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 19,
+    "query": "What should regression tests verify?",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  },
+  {
+    "query_id": 20,
+    "query": "Summarise the product's main workflow.",
+    "status": "NOT_RUN: connect actual product pipeline",
+    "answer": null,
+    "steps": [],
+    "total_latency_ms": 0.0,
+    "input_tokens": null,
+    "output_tokens": null,
+    "cost_usd": null
+  }
+]
