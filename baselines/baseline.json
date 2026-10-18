@@ -1,0 +1,15 @@
+{
+  "minimum_overall": 3.5,
+  "minimum_by_tier": {
+    "easy": 4.0,
+    "medium": 3.5,
+    "hard": 3.0
+  },
+  "minimum_by_dimension": {
+    "correctness": 3.5,
+    "groundedness": 3.5,
+    "completeness": 3.0,
+    "relevance": 4.0,
+    "safe_abstention": 4.0
+  }
+}
